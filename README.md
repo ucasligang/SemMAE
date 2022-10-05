@@ -12,13 +12,11 @@ For details see [Semantic-Guided Masking for Learning Masked Autoencoders](https
 ## Citation
 
 ```
-@inproceedings{
-anonymous2022semmae,
-title={Sem{MAE}: Semantic-Guided Masking for Learning Masked Autoencoders},
-author={Anonymous},
-booktitle={Thirty-Sixth Conference on Neural Information Processing Systems},
-year={2022},
-url={https://openreview.net/forum?id=Ix37FJYDkBp}
+@article{li2022semmae,
+  title={SemMAE: Semantic-Guided Masking for Learning Masked Autoencoders},
+  author={Li, Gang and Zheng, Heliang and Liu, Daqing and Su, Bing and Zheng, Changwen},
+  journal={arXiv preprint arXiv:2206.10207},
+  year={2022}
 }
 ```
 
