@@ -1,4 +1,4 @@
-# SemMAE
+# Introduction
 
 Paper accepted at NeurIPS 2022.
 This is a official repository of SemMAE.
