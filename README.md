@@ -10,9 +10,7 @@ For details see [Semantic-Guided Masking for Learning Masked Autoencoders](https
 </div>
 
 ## Citation
-If you use this code for a paper, please cite:
 
-SemMAE
 ```
 @inproceedings{
 anonymous2022semmae,
