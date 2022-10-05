@@ -16,7 +16,7 @@ For details of our work see [Semantic-Guided Masking for Learning Masked Autoenc
 ```
 @article{li2022semmae,
   title={SemMAE: Semantic-Guided Masking for Learning Masked Autoencoders},
-  author={Li, Gang and Zheng, Heliang and Liu, Daqing and Su, Bing and Zheng, Changwen},
+  author={Li, Gang and Zheng, Heliang and Liu, Daqing and Wang, Chaoyue and Su, Bing and Zheng, Changwen},
   journal={arXiv preprint arXiv:2206.10207},
   year={2022}
 }
