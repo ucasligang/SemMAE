@@ -8,7 +8,7 @@ Our code references the [MAE](https://github.com/facebookresearch/mae), thanks a
 For details of our work see [Semantic-Guided Masking for Learning Masked Autoencoders](https://arxiv.org/pdf/2112.13085.pdf). 
 
 <div align="center">
-  <img width="1000", src="https://github.com/ucasligang/SemMAE/blob/main/src/figure1.png">
+  <img width="900", src="https://github.com/ucasligang/SemMAE/blob/main/src/figure1.png">
 </div>
 
 ## Citation
