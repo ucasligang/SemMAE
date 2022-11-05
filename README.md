@@ -44,7 +44,7 @@ As a sanity check, run evaluation using our ImageNet **fine-tuned** models:
 </tr>
 <tr><td align="left">reference ImageNet accuracy</td>
 <td align="center">83.352</td>
-
+<td align="center">waiting</td>
 </tr>
 </tbody></table>
 
