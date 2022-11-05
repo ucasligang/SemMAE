@@ -22,6 +22,16 @@ For details of our work see [Semantic-Guided Masking for Learning Masked Autoenc
 }
 ```
 
+Evaluate ViT-Base in a single GPU (`${IMAGENET_DIR}` is a directory containing `{train, val}` sets of ImageNet):
+```
+python main_finetune.py --eval --resume mae_finetuned_vit_base.pth --model vit_base_patch16 --batch_size 16 --data_path ${IMAGENET_DIR}
+```
+This should give:
+```
+* Acc@1 83.352 Acc@5 96.494 loss 0.745
+Accuracy of the network on the 50000 test images: 83.4%
+```
+
 ## Contact
 
 This repo is currently maintained by Gang Li([@ucasligang](https://github.com/ucasligang)).
