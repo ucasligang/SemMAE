@@ -36,7 +36,7 @@ For details of our work see [Semantic-Guided Masking for Learning Masked Autoenc
 
 </tr>
 <tr><td align="left">md5</td>
-<td align="center"><tt>waiting</tt></td>
+<td align="center"><tt>1482ae</tt></td>
 <td align="center"><tt>waiting</tt></td>
 </tr>
 
