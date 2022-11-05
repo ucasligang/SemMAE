@@ -31,6 +31,7 @@ This should give:
 * Acc@1 83.352 Acc@5 96.494 loss 0.745
 Accuracy of the network on the 50000 test images: 83.4%
 ```
+Note that all of our results were obtained on the 800epoches setting
 
 ## Contact
 
