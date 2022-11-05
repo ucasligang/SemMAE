@@ -21,6 +21,26 @@ For details of our work see [Semantic-Guided Masking for Learning Masked Autoenc
   year={2022}
 }
 ```
+### Pretrained models
+
+<table><tbody>
+<!-- START TABLE -->
+<!-- TABLE HEADER -->
+<th valign="bottom">800-epochs</th>
+<th valign="bottom">ViT-Base 16x16 patch</th>
+<th valign="bottom">ViT-Base 8x8 patch</th>
+<!-- TABLE BODY -->
+<tr><td align="left">fine-tuned checkpoint</td>
+<td align="center"><a href="https://drive.google.com/file/d/1GaGWNv8I-ADF8e-Bvftgr2k8qNeyLdTJ/view?usp=share_link">download</a></td>
+  <td align="center"><a href="">waiting</a></td>
+
+</tr>
+<tr><td align="left">md5</td>
+<td align="center"><tt>waiting</tt></td>
+<td align="center"><tt>waiting</tt></td>
+</tr>
+
+</tbody></table>
 
 ### Evaluation
 
