@@ -117,8 +117,8 @@ def get_args_parser():
                         help='Use class token instead of global pool for classification')
 
     # Dataset parameters
-    parser.add_argument('--data_path', default='/public/data0/MULT/datasets/imagenet/', type=str,
-                        help='datasets path')
+    parser.add_argument('--data_path', default='/datasets01/imagenet_full_size/061417/', type=str,
+                        help='dataset path')
     parser.add_argument('--nb_classes', default=1000, type=int,
                         help='number of the classification types')
 
@@ -182,7 +182,7 @@ def main(args):
         print("Sampler_train = %s" % str(sampler_train))
         if args.dist_eval:
             if len(dataset_val) % num_tasks != 0:
-                print('Warning: Enabling distributed evaluation with an eval datasets not divisible by process number. '
+                print('Warning: Enabling distributed evaluation with an eval dataset not divisible by process number. '
                       'This will slightly alter validation results as extra duplicate entries are added to achieve '
                       'equal num of samples per-process.')
             sampler_val = torch.utils.data.DistributedSampler(
@@ -255,12 +255,13 @@ def main(args):
 
         # manually initialize fc layer
         trunc_normal_(model.head.weight, std=2e-5)
-
+    
     # freeze all but the head(Gang Li)
     for _, p in model.named_parameters():
         p.requires_grad = True # False
     for _, p in model.head.named_parameters():
         p.requires_grad = True
+
 
     model.to(device)
 
@@ -304,6 +305,7 @@ def main(args):
     print("criterion = %s" % str(criterion))
 
     misc.load_model(args=args, model_without_ddp=model_without_ddp, optimizer=optimizer, loss_scaler=loss_scaler)
+
     if args.eval:
         test_stats = evaluate(data_loader_val, model, device)
         print(f"Accuracy of the network on the {len(dataset_val)} test images: {test_stats['acc1']:.1f}%")
