@@ -73,7 +73,7 @@ As a sanity check, run evaluation using our ImageNet **fine-tuned** models:
 </tbody></table>
 
 
-Evaluate ViT-Base in a single GPU (`${IMAGENET_DIR}` is a directory containing `{train, val}` sets of ImageNet):
+Evaluate ViT-Base_16 in a single GPU (`${IMAGENET_DIR}` is a directory containing `{train, val}` sets of ImageNet):
 ```
 python main_finetune.py --eval --resume SemMAE_epoch799_vit_base_checkpoint-99.pth --model vit_base_patch16 --batch_size 16 --data_path ${IMAGENET_DIR}
 ```
@@ -82,6 +82,7 @@ This should give:
 * Acc@1 83.352 Acc@5 96.494 loss 0.745
 Accuracy of the network on the 50000 test images: 83.4%
 ```
+Evaluate ViT-Base_8 in a single GPU (`${IMAGENET_DIR}` is a directory containing `{train, val}` sets of ImageNet):
 ```
 python main_finetune.py --eval --resume SemMAE_epoch799_vit_base_checkpoint_patch8-78.pth --model vit_base_patch8 --batch_size 8 --data_path ${IMAGENET_DIR}
 ```
