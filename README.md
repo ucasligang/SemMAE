@@ -3,7 +3,6 @@
 Paper accepted at NeurIPS 2022.
 
 This is a official repository of SemMAE.
-We will open our models and code soon.
 Our code references the [MAE](https://github.com/facebookresearch/mae), thanks a lot for their outstanding work!
 For details of our work see [Semantic-Guided Masking for Learning Masked Autoencoders](https://arxiv.org/pdf/2206.10207.pdf). 
 
