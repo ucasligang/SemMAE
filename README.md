@@ -132,6 +132,7 @@ python -m torch.distributed.launch --nproc_per_node=8 --master_port=${MASTER_POR
         --setting 3 \
         --data_path ${DATA_DIR}
 ```
+Note that the input path ${DATA_DIR} is our processed dataset path.
 
 ## Contact
 
