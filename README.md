@@ -25,7 +25,7 @@ This implementation is in PyTorch+GPU.
 * This repo is based on [`timm==0.3.2`](https://github.com/rwightman/pytorch-image-models), for which a [fix](https://github.com/rwightman/pytorch-image-models/issues/420#issuecomment-776459842) is needed to work with PyTorch 1.8.1+.
 * It maybe needed for the repository: tensorboard. It can be installed by 'pip install '.
 
-### Part Mask on ImageNet training set.
+### Process ImageNet dataset(including part mask and pixel values).
 <table><tbody>
 <!-- START TABLE -->
 <!-- TABLE HEADER -->
