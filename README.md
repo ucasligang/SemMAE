@@ -80,16 +80,16 @@ As a sanity check, run evaluation using our ImageNet **fine-tuned** models:
 <!-- TABLE BODY -->
 <tr><td align="left">fine-tuned checkpoint</td>
 <td align="center"><a href="https://drive.google.com/file/d/1KD5JCj-cdcsPkGPQ9n5hwaSg2Rrvm88i/view?usp=share_link">download</a></td>
-  <td align="center"><a href="">waiting</a></td>
+  <td align="center"><a href="https://drive.google.com/file/d/1WB0_Mx0XCPMiwnS1PVVD38lq0u9U49R8/view?usp=share_link">download</a></td>
 
 </tr>
 <tr><td align="left">md5</td>
 <td align="center"><tt>bbc5ef</tt></td>
-<td align="center"><tt>waiting</tt></td>
+<td align="center"><tt>6abd9e</tt></td>
 </tr>
 <tr><td align="left">reference ImageNet accuracy</td>
 <td align="center">83.352</td>
-<td align="center">waiting</td>
+<td align="center">84.444</td>
 </tr>
 </tbody></table>
 
