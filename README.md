@@ -123,7 +123,7 @@ python -m torch.distributed.launch --nproc_per_node=8 --master_port=${MASTER_POR
         --use_env /public/data0/MULT/users/ligang351/projects/mae-main/main_pretrain_setting3.py \
         --output_dir ${OUTPUT_DIR} --log_dir=${OUTPUT_DIR} \
         --batch_size 128 \
-        --model mae_vit_base_patch8 \
+        --model mae_vit_base_patch16 \
         --norm_pix_loss \
         --mask_ratio 0.75 \
         --epochs 800 \
