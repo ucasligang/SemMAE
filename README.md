@@ -82,7 +82,15 @@ This should give:
 * Acc@1 83.352 Acc@5 96.494 loss 0.745
 Accuracy of the network on the 50000 test images: 83.4%
 ```
-Note that all of our results were obtained on the 800epoches setting
+```
+python main_finetune.py --eval --resume SemMAE_epoch799_vit_base_checkpoint_patch8-78.pth --model vit_base_patch8 --batch_size 8 --data_path ${IMAGENET_DIR}
+```
+This should give:
+```
+* Acc@1 84.444 Acc@5 97.032 loss 0.683
+Accuracy of the network on the 50000 test images: 84.44%. 
+```
+Note that all of our results are obtained on the pretraining 800-epoches setting, the best checkpoint is lost for vit_base_patch8(The paper reported a performance of 84.5% top-1 acc vs. 84.44% in 78-th epoch). 
 
 ## Contact
 
