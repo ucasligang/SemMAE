@@ -21,6 +21,9 @@ For details of our work see [Semantic-Guided Masking for Learning Masked Autoenc
   year={2022}
 }
 ```
+This implementation is in PyTorch+GPU.
+* This repo is based on [`timm==0.3.2`](https://github.com/rwightman/pytorch-image-models), for which a [fix](https://github.com/rwightman/pytorch-image-models/issues/420#issuecomment-776459842) is needed to work with PyTorch 1.8.1+.
+
 ### Pretrained models
 
 <table><tbody>
