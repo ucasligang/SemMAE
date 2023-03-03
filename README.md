@@ -57,12 +57,12 @@ This implementation is in PyTorch+GPU.
 <!-- TABLE BODY -->
 <tr><td align="left">pretrained checkpoint</td>
 <td align="center"><a href="https://drive.google.com/file/d/1GaGWNv8I-ADF8e-Bvftgr2k8qNeyLdTJ/view?usp=share_link">download</a></td>
-  <td align="center"><a href="">waiting</a></td>
+  <td align="center"><a href="https://drive.google.com/file/d/1X0yHD4kEM8VCYwSmiNcJfK8jni15cvdH/view?usp=share_link">download</a></td>
 
 </tr>
 <tr><td align="left">md5</td>
 <td align="center"><tt>1482ae</tt></td>
-<td align="center"><tt>waiting</tt></td>
+<td align="center"><tt>322b6a</tt></td>
 </tr>
 
 </tbody></table>
