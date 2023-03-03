@@ -114,6 +114,25 @@ Accuracy of the network on the 50000 test images: 84.44%.
 ```
 Note that all of our results are obtained on the pretraining 800-epoches setting, the best checkpoint is lost for vit_base_patch8(The paper reported a performance of 84.5% top-1 acc vs. 84.44% in 78-th epoch). 
 
+## Pre-training
+To pre-train ViT-Large (recommended default) with multi-node distributed training, run the following on 8 nodes with 8 GPUs each:
+
+```
+python -m torch.distributed.launch --nproc_per_node=8 --master_port=${MASTER_PORT} \
+        --nnodes=${NNODES} --node_rank=\${SLURM_NODEID} --master_addr=${MASTER_ADDR} \
+        --use_env /public/data0/MULT/users/ligang351/projects/mae-main/main_pretrain_setting3.py \
+        --output_dir ${OUTPUT_DIR} --log_dir=${OUTPUT_DIR} \
+        --batch_size 128 \
+        --model mae_vit_base_patch8 \
+        --norm_pix_loss \
+        --mask_ratio 0.75 \
+        --epochs 800 \
+        --warmup_epochs 40 \
+        --blr 1.5e-4 --weight_decay 0.05 \
+        --setting 3 \
+        --data_path ${DATA_DIR}
+```
+
 ## Contact
 
 This repo is currently maintained by Gang Li([@ucasligang](https://github.com/ucasligang)).
