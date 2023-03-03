@@ -25,6 +25,27 @@ This implementation is in PyTorch+GPU.
 * This repo is based on [`timm==0.3.2`](https://github.com/rwightman/pytorch-image-models), for which a [fix](https://github.com/rwightman/pytorch-image-models/issues/420#issuecomment-776459842) is needed to work with PyTorch 1.8.1+.
 * It maybe needed for the repository: tensorboard. It can be installed by 'pip install '.
 
+### Part Mask on ImageNet training set.
+<table><tbody>
+<!-- START TABLE -->
+<!-- TABLE HEADER -->
+<tr><td align="left">size</td>
+<th valign="bottom">16x16 patch</th>
+<th valign="bottom">8x8 patch</th>
+<!-- TABLE BODY -->
+</tr>
+<tr><td align="left">link</td>
+<td align="center"><a href="">waiting</a></td>
+<td align="center"><a href="">waiting</a></td>
+</tr>
+</tr>
+<tr><td align="left">md5</td>
+<td align="center"><tt>1482ae</tt></td>
+<td align="center"><tt>waiting</tt></td>
+</tr>
+
+</tbody></table>
+
 ### Pretrained models
 
 <table><tbody>
@@ -34,7 +55,7 @@ This implementation is in PyTorch+GPU.
 <th valign="bottom">ViT-Base 16x16 patch</th>
 <th valign="bottom">ViT-Base 8x8 patch</th>
 <!-- TABLE BODY -->
-<tr><td align="left">fine-tuned checkpoint</td>
+<tr><td align="left">pretrained checkpoint</td>
 <td align="center"><a href="https://drive.google.com/file/d/1GaGWNv8I-ADF8e-Bvftgr2k8qNeyLdTJ/view?usp=share_link">download</a></td>
   <td align="center"><a href="">waiting</a></td>
 
