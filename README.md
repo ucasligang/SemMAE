@@ -120,7 +120,7 @@ To pre-train ViT-Large (recommended default) with multi-node distributed trainin
 ```
 python -m torch.distributed.launch --nproc_per_node=8 --master_port=${MASTER_PORT} \
         --nnodes=${NNODES} --node_rank=\${SLURM_NODEID} --master_addr=${MASTER_ADDR} \
-        --use_env /public/data0/MULT/users/ligang351/projects/mae-main/main_pretrain_setting3.py \
+        --use_env main_pretrain_setting3.py \
         --output_dir ${OUTPUT_DIR} --log_dir=${OUTPUT_DIR} \
         --batch_size 128 \
         --model mae_vit_base_patch16 \
