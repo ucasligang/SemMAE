@@ -47,8 +47,8 @@ def train_one_epoch(model: torch.nn.Module,
         with torch.cuda.amp.autocast():
             #mask_lambda = 1-(epoch+1)*1.0/800
             #mask_lambda = (epoch+1)*1.0/800
-            #mask_lambda = 1-pow((epoch+1)/800,1/3)
-            mask_lambda = (1+math.cos((math.pi*(epoch+1))/800))/2
+            mask_lambda = 1-pow((epoch+1)/800,2)
+            #mask_lambda = (1+math.cos((math.pi*(epoch+1))/800))/2
             loss, _, _ = model(samples, mask_ratio=args.mask_ratio, mask_lambda=mask_lambda)
 
         loss_value = loss.item()
